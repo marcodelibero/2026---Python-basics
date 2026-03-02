@@ -1,0 +1,1 @@
+df = df.groupby(['Dimension']).agg(var1_sum=('Var1', 'sum'), var2_nunique=('Var2', 'nunique')).reset_index()
