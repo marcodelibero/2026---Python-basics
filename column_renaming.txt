@@ -1,0 +1,2 @@
+#column renaming 
+transactions.rename(columns={'t_dat':'transaction_date'},inplace=True)
