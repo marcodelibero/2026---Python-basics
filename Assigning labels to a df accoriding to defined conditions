@@ -1,4 +1,13 @@
+import pandas as pd
 import numpy as np
+
+# Create a dummy DataFrame to test the logic
+data = {
+    'condition_1': [True, False, True, False, True],
+    'condition_2': ['met', 'pending', 'pending', 'met', 'other'],
+    'existing_column': ['original_1', 'original_2', 'original_3', 'original_4', 'original_5']
+}
+df = pd.DataFrame(data)
 
 # Define the logical conditions for selection
 # You can combine multiple criteria using bitwise operators: & (AND), | (OR)
@@ -13,3 +22,5 @@ choices = ['x', 'y']
 # Create the new column using np.select
 # The 'default' argument specifies the value to use if no conditions are met
 df['new_column'] = np.select(conditions, choices, default=df['existing_column'])
+
+print(df)
