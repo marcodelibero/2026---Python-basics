@@ -1,0 +1,2 @@
+#check for null values in the whole dataframe
+articles.isnull().sum()
