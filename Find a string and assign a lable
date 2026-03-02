@@ -1,0 +1,14 @@
+import pandas as pd
+
+# Sample data initialization
+data = {'Name': ['Tom', 'Joseph', 'Marco', 'John'], 'Age': [20, 21, 19, 18]}  
+df = pd.DataFrame(data)
+
+# List of targets to check against
+mylist = ['Tom', 'Marco']
+
+# Create the "included" boolean column
+# .isin() returns True if the value exists in the provided list, False otherwise
+df['included'] = df['Name'].isin(mylist)
+
+print(df)
