@@ -1,0 +1,2 @@
+#doing a left join to combine the age of the customers with the transactions data
+transactions.merge(customers[['customer_id','age']],how='left',on='customer_id')
