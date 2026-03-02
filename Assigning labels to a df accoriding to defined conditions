@@ -1,0 +1,15 @@
+import numpy as np
+
+# Define the logical conditions for selection
+# You can combine multiple criteria using bitwise operators: & (AND), | (OR)
+conditions = [
+    (df['condition_1'] == True) & (df['condition_2'] == 'met'),
+    (df['condition_1'] == False) & (df['condition_2'] == 'pending')
+]
+
+# Define the corresponding values to assign for each condition
+choices = ['x', 'y']
+
+# Create the new column using np.select
+# The 'default' argument specifies the value to use if no conditions are met
+df['new_column'] = np.select(conditions, choices, default=df['existing_column'])
