@@ -1,0 +1,2 @@
+#we have some missing data in the description column. We can fill it with 'unknown'
+articles['detail_desc'].fillna('unknown', inplace=True)
