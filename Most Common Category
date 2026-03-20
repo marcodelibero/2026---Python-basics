@@ -1,0 +1,3 @@
+# finding the most common category 
+#using value counts to find the most common age
+customers['age'].value_counts()
