@@ -1,0 +1,7 @@
+#check column data types
+articles.dtypes
+#change column data type 
+#changing article_id to string
+articles['article_id']=articles['article_id'].astype('str')
+#change the date column to datetime
+transactions['t_date']=pd.to_datetime(transactions['t_dat'])
