@@ -1,0 +1,4 @@
+#for different historical groups we find the total deposits generated over 6 months and % of deposits out of total deposits from existing contracts 
+for i in (['m12_ago_cleaned','m11_ago_cleaned','m10_ago_cleaned','m9_ago_cleaned','m8_ago_cleaned','m7_ago_cleaned','m6_ago_cleaned','m5_ago_cleaned','m4_ago_cleaned','m3_ago_cleaned','m2_ago_cleaned','m1_ago_cleaned']):
+    deposits_temp=int(df[df[i]==1][['deposits_first_6_months']].sum())
+    print(deposits_temp), print(deposits_temp/132789308)
