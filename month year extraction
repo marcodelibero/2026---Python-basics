@@ -1,0 +1,4 @@
+#change the date column to datetime
+transactions['t_date']=pd.to_datetime(transactions['t_dat'])
+#extract the month year from date column
+transactions['year_month']=transactions['t_date'].dt.to_period('M')
