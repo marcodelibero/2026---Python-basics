@@ -8,7 +8,6 @@ The course is structured around real-world use cases that we tackle daily in our
 Every notebook is designed to be interactive and practically oriented:
 - Practical day-to-day examples: Code snippets and patterns we actually use to extract, clean, and manipulate data.
 - Applied theory: Brief conceptual explanations immediately followed by their Python implementation.
-- Dummy Data included: Every script comes with pre-loaded mock datasets. You'll be able to run the code, tweak it, and get your hands dirty without having to connect to external databases or hunt for test data.
 
 ⚠️ What we WON'T cover (Prerequisites)
 Since this course is tailored for analysts, we will not start from the absolute basics of programming. We will assume you are already familiar with some general concepts (often known to those who use SQL or other languages), including:
